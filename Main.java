@@ -51,3 +51,9 @@ public class Main {
                         operations.searchByName(name).display();
                         break;
 
+                    case 5:
+                        System.out.print("Enter Position (Index): ");
+                        int index = scan.nextInt();
+                        scan.nextLine();
+                        operations.searchByPosition(index).display();
+                        break;
