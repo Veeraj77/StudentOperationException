@@ -34,3 +34,7 @@ public class Main {
                         System.out.println("Student added successfully.");
                         break;
 
+                    case 2:
+                        operations.displayStudents();
+                        break;
+
