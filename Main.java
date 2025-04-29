@@ -38,3 +38,9 @@ public class Main {
                         operations.displayStudents();
                         break;
 
+                    case 3:
+                        System.out.print("Enter PRN to search: ");
+                        prn = scan.nextInt();
+                        scan.nextLine();
+                        operations.searchByPRN(prn).display();
+                        break;
