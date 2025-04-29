@@ -17,3 +17,20 @@ public class Main {
 
             try {
                 switch (choice) {
+                    case 1:
+                        System.out.print("Enter Name: ");
+                        String name = scan.nextLine();
+                        System.out.print("Enter PRN: ");
+                        int prn = scan.nextInt();
+                        scan.nextLine();
+                        System.out.print("Enter Branch: ");
+                        String branch = scan.nextLine();
+                        System.out.print("Enter Batch: ");
+                        String batch = scan.nextLine();
+                        System.out.print("Enter CGPA: ");
+                        float cgpa = scan.nextFloat();
+                        scan.nextLine();
+                        operations.addStudent(new Student(name, prn, branch, batch, cgpa));
+                        System.out.println("Student added successfully.");
+                        break;
+
