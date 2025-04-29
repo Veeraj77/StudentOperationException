@@ -16,3 +16,4 @@ public class Main {
             scan.nextLine(); // consume newline
 
             try {
+                switch (choice) {
