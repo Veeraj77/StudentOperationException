@@ -39,3 +39,11 @@ public class StudentOperations {
         s.setCGPA(cgpa);
         return true;
     }
+
+    // Delete student
+    public boolean deleteStudent(int prn) throws StudentNotFoundException {
+        Student s = searchByPRN(prn);
+        students.remove(s);
+        return true;
+    }
+}
