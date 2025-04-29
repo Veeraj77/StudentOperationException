@@ -87,3 +87,17 @@ public class Main {
                         System.out.println("Exiting...");
                         break;
 
+                    default:
+                        throw new InvalidInputException("Invalid menu choice. Try again.");
+                }
+            } catch (StudentNotFoundException | StudentAlreadyExistsException | InvalidInputException e) {
+                System.out.println("Error: " + e.getMessage());
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid input type. Please enter data correctly.");
+                scan.nextLine(); // clear buffer
+            }
+        } while (choice != 8);
+
+        scan.close();
+    }
+}
