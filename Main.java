@@ -44,3 +44,10 @@ public class Main {
                         scan.nextLine();
                         operations.searchByPRN(prn).display();
                         break;
+
+                    case 4:
+                        System.out.print("Enter Name to search: ");
+                        name = scan.nextLine();
+                        operations.searchByName(name).display();
+                        break;
+
