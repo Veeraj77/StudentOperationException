@@ -22,3 +22,13 @@ public class Student {
     public String getBatch() { return batch; }
     public float getCGPA() { return cgpa; }
 
+    // Setters
+    public void setName(String name) { this.name = name; }
+    public void setBranch(String branch) { this.branch = branch; }
+    public void setBatch(String batch) { this.batch = batch; }
+    public void setCGPA(float cgpa) { this.cgpa = cgpa; }
+
+    public void display() {
+        System.out.println("Name: " + name + " | PRN: " + prn + " | Branch: " + branch + " | Batch: " + batch + " | CGPA: " + cgpa);
+    }
+}
