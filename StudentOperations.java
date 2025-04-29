@@ -30,3 +30,12 @@ public class StudentOperations {
         }
     }
 
+    // Update student
+    public boolean updateStudent(int prn, String name, String branch, String batch, float cgpa) throws StudentNotFoundException {
+        Student s = searchByPRN(prn);
+        s.setName(name);
+        s.setBranch(branch);
+        s.setBatch(batch);
+        s.setCGPA(cgpa);
+        return true;
+    }
