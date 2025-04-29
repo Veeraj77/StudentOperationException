@@ -30,6 +30,15 @@ public class StudentOperations {
         }
     }
 
+    // Search by PRN
+    public Student searchByPRN(int prn) throws StudentNotFoundException {
+        for (Student s : students) {
+            if (s.getPRN() == prn) {
+                return s;
+            }
+        }
+        throw new StudentNotFoundException("Student with PRN " + prn + " not found.");
+    }
     // Update student
     public boolean updateStudent(int prn, String name, String branch, String batch, float cgpa) throws StudentNotFoundException {
         Student s = searchByPRN(prn);
