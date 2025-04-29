@@ -39,6 +39,17 @@ public class StudentOperations {
         }
         throw new StudentNotFoundException("Student with PRN " + prn + " not found.");
     }
+
+    // Search by Name
+    public Student searchByName(String name) throws StudentNotFoundException {
+        for (Student s : students) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                return s;
+            }
+        }
+        throw new StudentNotFoundException("Student with name \"" + name + "\" not found.");
+    }
+
     // Update student
     public boolean updateStudent(int prn, String name, String branch, String batch, float cgpa) throws StudentNotFoundException {
         Student s = searchByPRN(prn);
