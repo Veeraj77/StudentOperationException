@@ -83,3 +83,7 @@ public class Main {
                         System.out.println("Student deleted successfully.");
                         break;
 
+                    case 8:
+                        System.out.println("Exiting...");
+                        break;
+
