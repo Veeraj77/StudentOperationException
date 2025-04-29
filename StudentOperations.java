@@ -19,3 +19,14 @@ public class StudentOperations {
         students.add(student);
     }
 
+    // Display all students
+    public void displayStudents() {
+        if (students.isEmpty()) {
+            System.out.println("No student records found.");
+        } else {
+            for (Student s : students) {
+                s.display();
+            }
+        }
+    }
+
